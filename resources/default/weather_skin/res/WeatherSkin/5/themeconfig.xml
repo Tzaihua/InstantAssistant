@@ -1,0 +1,5 @@
+﻿<theme-config PackName="雷阵雨" PackVersion="2.0" PackMinVer="3487">
+	<backgroundlist>
+		<background mainfile="main.jpg" bkgstyle="toprightstretch"/>
+	</backgroundlist>
+</theme-config>

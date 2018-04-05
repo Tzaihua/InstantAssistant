@@ -1,0 +1,752 @@
+﻿/*主界面-顶部-MainWidget--begin*/
+QWidget#MainWidget{
+    qproperty-PaintBackgroundColor:rgb(255,255,255);/*使用MainWidget的父类DraggableWidget自定义属性*/
+    color:rgb(49,49,49);
+    border-radius:3px;
+}
+
+QWidget#m_top_widget{
+    height:130px;
+    background-color:rgba(22,154,218,255);
+    color:rgba(255,255,255,255);
+}
+
+QWidget#m_user_info_widget
+{
+    height:80px;
+    background-color:rgba(22,154,218,255);
+    color:rgba(255,255,255,255);
+}
+
+QWidget#m_search_bar_widget{
+    height:30px;
+    background-color:rgba(21,127,178,255);
+}
+QWidget#m_center_widget{
+    height:470px;
+    background-color:rgba(232,245,252,255);
+}
+QWidget#m_bottom_widget{
+    height:60px;
+    background-color:rgba(203,233,247,255);
+}
+
+/*主界面-顶部-MainWidget--end*/
+
+/*主界面-顶部-DialogTitleWidget--begin*/
+QWidget#DialogTitleWidget{
+    height:26px;
+    color:rgba(255,255,255,255);
+}
+
+DialogTitleWidget > QPushButton#m_close_btn{
+    width:25px;height:26px;
+    border-width: 0px;
+    border-radius: 0px;
+}
+
+DialogTitleWidget > QPushButton#m_min_btn{
+    width:25px;height:26px;
+    border-width: 0px;
+    border-radius: 0px;
+}
+
+DialogTitleWidget > QPushButton#m_medal_btn{
+    width:25px;height:26px;
+    border-width: 0px;
+    border-radius: 0px;
+}
+
+DialogTitleWidget > QPushButton#m_main_menu_btn{
+    width:25px;height:26px;
+    border-width: 0px;
+    border-radius: 0px;
+}
+
+/*关闭按钮--begin*/
+DialogTitleWidget > QPushButton#m_close_btn{
+    background-image: url(:/resources/default/appframework/sysbutton/mainpanel/btn_close_normal.png);
+}
+
+DialogTitleWidget > QPushButton#m_close_btn:hover{
+    background-image: url(:/resources/default/appframework/sysbutton/mainpanel/btn_close_highlight.png);
+}
+
+DialogTitleWidget > QPushButton#m_close_btn:pressed{
+    background-image: url(:/resources/default/appframework/sysbutton/mainpanel/btn_close_down.png);
+}
+
+DialogTitleWidget > QPushButton#m_close_btn:checked{
+    background-image: url(:/resources/default/appframework/sysbutton/mainpanel/btn_close_down.png);
+}
+
+DialogTitleWidget > QPushButton#m_close_btn:disabled{
+    background-image: url(:/resources/default/appframework/sysbutton/mainpanel/btn_close_normal.png);
+}
+/*关闭按钮--end*/
+
+/*最小化按钮--begin*/
+DialogTitleWidget > QPushButton#m_min_btn{
+    background-image: url(:/resources/default/appframework/sysbutton/mainpanel/btn_mini_normal.png);
+}
+
+DialogTitleWidget > QPushButton#m_min_btn:hover{
+    background-image: url(:/resources/default/appframework/sysbutton/mainpanel/btn_mini_highlight.png);
+}
+
+DialogTitleWidget > QPushButton#m_min_btn:pressed{
+    background-image: url(:/resources/default/appframework/sysbutton/mainpanel/btn_mini_down.png);
+}
+
+DialogTitleWidget > QPushButton#m_min_btn:checked{
+    background-image: url(:/resources/default/appframework/sysbutton/mainpanel/btn_mini_down.png);
+}
+
+DialogTitleWidget > QPushButton#m_min_btn:disabled{
+    background-image: url(:/resources/default/appframework/sysbutton/mainpanel/btn_mini_normal.png);
+}
+/*最小化按钮--end*/
+
+/*主界面-顶部-TitleWidget--begin*/
+QWidget#TitleWidget{
+    height:26px;
+    color:rgba(255,255,255,255);
+}
+
+TitleWidget > QPushButton#m_close_btn{
+    width:25px;height:26px;
+    border-width: 0px;
+    border-radius: 0px;
+}
+
+TitleWidget > QPushButton#m_min_btn{
+    width:25px;height:26px;
+    border-width: 0px;
+    border-radius: 0px;
+}
+
+TitleWidget > QPushButton#m_medal_btn{
+    width:25px;height:26px;
+    border-width: 0px;
+    border-radius: 0px;
+}
+
+TitleWidget > QPushButton#m_main_menu_btn{
+    width:25px;height:26px;
+    border-width: 0px;
+    border-radius: 0px;
+}
+
+/*关闭按钮--begin*/
+TitleWidget > QPushButton#m_close_btn{
+    background-image: url(:/resources/default/appframework/sysbutton/mainpanel/btn_close_normal.png);
+}
+
+TitleWidget > QPushButton#m_close_btn:hover{
+    background-image: url(:/resources/default/appframework/sysbutton/mainpanel/btn_close_highlight.png);
+}
+
+TitleWidget > QPushButton#m_close_btn:pressed{
+    background-image: url(:/resources/default/appframework/sysbutton/mainpanel/btn_close_down.png);
+}
+
+TitleWidget > QPushButton#m_close_btn:checked{
+    background-image: url(:/resources/default/appframework/sysbutton/mainpanel/btn_close_down.png);
+}
+
+TitleWidget > QPushButton#m_close_btn:disabled{
+    background-image: url(:/resources/default/appframework/sysbutton/mainpanel/btn_close_normal.png);
+}
+/*关闭按钮--end*/
+
+/*最小化按钮--begin*/
+TitleWidget > QPushButton#m_min_btn{
+    background-image: url(:/resources/default/appframework/sysbutton/mainpanel/btn_mini_normal.png);
+}
+
+TitleWidget > QPushButton#m_min_btn:hover{
+    background-image: url(:/resources/default/appframework/sysbutton/mainpanel/btn_mini_highlight.png);
+}
+
+TitleWidget > QPushButton#m_min_btn:pressed{
+    background-image: url(:/resources/default/appframework/sysbutton/mainpanel/btn_mini_down.png);
+}
+
+TitleWidget > QPushButton#m_min_btn:checked{
+    background-image: url(:/resources/default/appframework/sysbutton/mainpanel/btn_mini_down.png);
+}
+
+TitleWidget > QPushButton#m_min_btn:disabled{
+    background-image: url(:/resources/default/appframework/sysbutton/mainpanel/btn_mini_normal.png);
+}
+/*最小化按钮--end*/
+
+
+/*主界面-顶部-TitleWidget--end*/
+
+
+
+
+
+/*主界面-顶部-UserInfoCoverWidget--begin*/
+
+QPushButton#m_user_nick_name_btn
+{
+    background:transparent;
+    color:rgb(254,254,254);
+    border:0px solid rgba(221,221,221,255);
+    font-size:15px;
+    font-weight:bold;
+}
+
+QToolButton#m_user_grade_tbtn,#m_status_tbtn
+{
+    background:transparent;
+
+}
+
+QLineEdit#m_signature_line_edit
+{
+    color:rgba(254,254,254,255);
+}
+QLineEdit#m_signature_line_edit:focus
+{
+    color:rgba(0,0,0,255);
+}
+
+/*主界面-顶部-UserInfoCoverWidget--end*/
+
+/*主界面-搜索工具栏-m_search_bar_widget--begin*/
+/*探索按钮--begin*/
+QPushButton#m_search_app_line_btn{
+    border-image: url(:/resources/default/appframework/search/search_icon_normal.png);
+}
+
+QPushButton#m_search_app_line_btn:hover{
+    border-image: url(:/resources/default/appframework/search/search_icon_hover.png);
+}
+
+QPushButton#m_search_app_line_btn:pressed{
+    border-image: url(:/resources/default/appframework/search/search_icon_hover.png);
+}
+
+QPushButton#m_search_app_line_btn:checked{
+    border-image: url(:/resources/default/appframework/search/search_icon_hover.png);
+}
+
+QPushButton#m_search_app_line_btn:disabled{
+    border-image: url(:/resources/default/appframework/search/search_icon_normal.png);
+}
+/*搜索按钮--end*/
+
+
+/*程序顶部搜索框*/
+AppSearchLineEdit#m_search_app_line_edit{
+    border-radius:0px;
+    padding:5px 5px;
+    line-height:14px;
+    font-size:12px;
+    color:rgb(207,227,237);
+    background-color:rgba(21,127,178,255);
+}
+AppSearchLineEdit#m_search_app_line_edit:focus{
+    color:rgb(10,10,10);
+    background-color:rgba(255,255,255,252);
+    border-bottom:3px solid rgba(237,237,237,255);
+}
+
+/*主界面-搜索工具栏-m_search_bar_widget--end*/
+
+/*主界面-中间部件-m_main_tab_widget--begin*/
+
+QWidget#m_tab_bar_wdiget
+{
+    height:36px;
+    background-color:rgba(232,245,252,255);
+    border-bottom:1px solid rgba(217,223,226,255);
+}
+
+#m_contact_tbtn,#m_group_tbtn,#m_app_tbtn,#m_mobile_tbtn,#m_history_tbtn
+{
+    background:transparent;
+}
+#m_contact_tab
+{
+    background-color:rgba(232,245,252,255);
+}
+
+#m_group_tab
+{
+    background-color:rgba(232,245,252,255);
+}
+
+#m_app_tab
+{
+    background-color:rgba(232,245,252,255);
+}
+
+#m_mobile_tab
+{
+    background-color:rgba(232,245,252,255);
+}
+
+#m_history_tab
+{
+    background-color:rgba(232,245,252,255);
+}
+
+#m_contact_list_widget
+{
+    border:0px;
+    background-color:rgba(232,245,252,255);
+}
+
+/*主界面-中间部件-m_main_tab_widget--end*/
+
+
+/*#m_main_menu_tbtn,#main_app_setting_tbtn,#m_open_msg_mgr_tbtn,#m_file_share_tbtn,#m_collection_tbtn
+{
+    background:transparent;
+    border:0px;
+}*/
+
+
+
+/*主界面-顶部-SettingPannelWidget--begin*/
+SettingPannelWidget QWidget#m_title_widget
+{
+    background-color:rgba(0,155,219,255);
+}
+
+
+SettingPannelWidget QPushButton#m_close_btn{
+    width:25px;height:26px;
+    border-width: 0px;
+    border-radius: 0px;
+}
+
+SettingPannelWidget QPushButton#m_min_btn{
+    width:25px;height:26px;
+    border-width: 0px;
+    border-radius: 0px;
+}
+
+
+SettingPannelWidget QPushButton#m_close_btn{
+    background-image: url(:/resources/default/appframework/sysbutton/mainpanel/btn_close_normal.png);
+}
+
+SettingPannelWidget QPushButton#m_close_btn:hover{
+    background-image: url(:/resources/default/appframework/sysbutton/mainpanel/btn_close_highlight.png);
+}
+
+SettingPannelWidget QPushButton#m_close_btn:pressed{
+    background-image: url(:/resources/default/appframework/sysbutton/mainpanel/btn_close_down.png);
+}
+
+SettingPannelWidget QPushButton#m_close_btn:checked{
+    background-image: url(:/resources/default/appframework/sysbutton/mainpanel/btn_close_down.png);
+}
+
+SettingPannelWidget QPushButton#m_close_btn:disabled{
+    background-image: url(:/resources/default/appframework/sysbutton/mainpanel/btn_close_normal.png);
+}
+/*关闭按钮--end*/
+
+/*最小化按钮--begin*/
+SettingPannelWidget QPushButton#m_min_btn{
+    background-image: url(:/resources/default/appframework/sysbutton/mainpanel/btn_mini_normal.png);
+}
+
+SettingPannelWidget QPushButton#m_min_btn:hover{
+    background-image: url(:/resources/default/appframework/sysbutton/mainpanel/btn_mini_highlight.png);
+}
+
+SettingPannelWidget QPushButton#m_min_btn:pressed{
+    background-image: url(:/resources/default/appframework/sysbutton/mainpanel/btn_mini_down.png);
+}
+
+SettingPannelWidget QPushButton#m_min_btn:checked{
+    background-image: url(:/resources/default/appframework/sysbutton/mainpanel/btn_mini_down.png);
+}
+
+SettingPannelWidget QPushButton#m_min_btn:disabled{
+    background-image: url(:/resources/default/appframework/sysbutton/mainpanel/btn_mini_normal.png);
+}
+
+
+
+SettingPannelWidget QToolButton#m_basic_setting_tbtn,
+SettingPannelWidget QToolButton#m_security_setting_tbtn,
+SettingPannelWidget QToolButton#m_secrecy_setting_tbtn
+{
+    width:90px;height:30px;
+    padding-left:8px;
+    background:transparent;
+    color:rgb(0,0,0);
+    border:0px solid rgba(221,221,221,255);
+    font-size:12px;
+    text-align:left;
+}
+
+SettingPannelWidget QToolButton#m_basic_setting_tbtn
+{
+    border-image: url(:/resources/default/appframework/config_center/kind_basic_normal.png);
+
+}
+
+SettingPannelWidget QToolButton#m_basic_setting_tbtn::hover
+{
+    color:rgb(0,109,176);
+    border-image: url(:/resources/default/appframework/config_center/kind_basic_hover.png);
+
+}
+
+
+SettingPannelWidget QToolButton#m_basic_setting_tbtn:pressed
+{
+    color:rgb(0,109,176);
+    border-image: url(:/resources/default/appframework/config_center/kind_basic_press.png);
+
+}
+
+
+SettingPannelWidget QToolButton#m_basic_setting_tbtn:checked
+{
+    color:rgb(0,109,176);
+    border-image: url(:/resources/default/appframework/config_center/kind_basic_press_hover.png);
+
+}
+
+
+SettingPannelWidget QToolButton#m_security_setting_tbtn
+{
+    border-image: url(:/resources/default/appframework/config_center/kind_security_normal.png);
+
+}
+
+SettingPannelWidget QToolButton#m_security_setting_tbtn::hover
+{
+    color:rgb(0,109,176);
+    border-image: url(:/resources/default/appframework/config_center/kind_security_hover.png);
+
+}
+
+
+SettingPannelWidget QToolButton#m_security_setting_tbtn:pressed
+{
+    color:rgb(0,109,176);
+    border-image: url(:/resources/default/appframework/config_center/kind_security_press.png);
+
+}
+
+
+SettingPannelWidget QToolButton#m_security_setting_tbtn:checked
+{
+    color:rgb(0,109,176);
+    border-image: url(:/resources/default/appframework/config_center/kind_security_press_hover.png);
+
+}
+
+
+SettingPannelWidget QToolButton#m_secrecy_setting_tbtn
+{
+    border-image: url(:/resources/default/appframework/config_center/kind_secrecy_normal.png);
+
+}
+
+SettingPannelWidget QToolButton#m_secrecy_setting_tbtn::hover
+{
+    color:rgb(0,109,176);
+    border-image: url(:/resources/default/appframework/config_center/kind_secrecy_hover.png);
+
+}
+
+
+SettingPannelWidget QToolButton#m_secrecy_setting_tbtn:pressed
+{
+    color:rgb(0,109,176);
+    border-image: url(:/resources/default/appframework/config_center/kind_secrecy_press.png);
+
+}
+
+
+SettingPannelWidget QToolButton#m_secrecy_setting_tbtn:checked
+{
+    color:rgb(0,109,176);
+    border-image: url(:/resources/default/appframework/config_center/kind_secrecy_press_hover.png);
+
+}
+
+/*tab page*/
+
+SettingPannelWidget QWidget#m_tab_bar_wdiget
+{
+    height:44px;
+    background-color:rgba(237,238,238,255);
+    border-bottom:1px solid rgba(215,215,215,255);
+}
+
+SettingPannelWidget QWidget#m_basic_setting_tab
+{
+    background-color:rgba(237,238,0,255);
+}
+
+SettingPannelWidget QWidget#m_security_setting_tab
+{
+    background-color:rgba(255,255,255,255);
+}
+
+SettingPannelWidget QWidget#m_secrecy_setting_tab
+{
+    background-color:rgba(0,238,238,255);
+}
+
+
+BasicSettingTabPageWidget QListWidget#m_left_category_list_widget,
+SecuritySettingTabPageWidget QListWidget#m_left_category_list_widget,
+SecrecySettingTabPageWidget QListWidget#m_left_category_list_widget
+{
+    background-color:rgba(240,240,240,255);
+}
+
+/*左侧List Widget分类列表*/
+BasicSettingTabPageWidget QListWidget,
+SecuritySettingTabPageWidget QListWidget,
+SecrecySettingTabPageWidget QListWidget
+{
+    background:transparent;
+    color:rgb(0,0,0);
+    border:0px solid rgba(221,221,221,255);
+}
+
+BasicSettingTabPageWidget QListWidget::item,
+SecuritySettingTabPageWidget QListWidget::item,
+SecrecySettingTabPageWidget QListWidget::item
+{
+    width:94px;height:38px;
+    border:0px solid gray;
+    padding-left:24px;
+}
+
+
+BasicSettingTabPageWidget QListWidget::item:selected:active,
+SecuritySettingTabPageWidget QListWidget::item:selected:active,
+SecrecySettingTabPageWidget QListWidget::item:selected:active
+{
+    background:#FFFFFF;
+    color:#19649F;
+    border-width:-1;
+}
+
+
+BasicSettingTabPageWidget QListWidget::item:selected,
+SecuritySettingTabPageWidget QListWidget::item:selected,
+SecrecySettingTabPageWidget QListWidget::item:selected
+{
+    background:#FFFFFF;
+    color:#19649F;
+}
+
+
+BasicSettingTabPageWidget QScrollArea,
+SecuritySettingTabPageWidget QScrollArea,
+SecrecySettingTabPageWidget QScrollArea
+{
+    color:rgb(0,0,0);
+    border:0px solid rgba(221,221,221,255);
+    padding:0px;
+    background-color:rgba(255,255,255,255);
+
+}
+
+
+
+
+/*主界面-顶部-SettingPannelWidget--end*/
+
+
+/*消息管理器-MsgManagerWidget--begin*/
+MsgManagerWidget QToolButton#m_contact_msg_tbtn,
+MsgManagerWidget QToolButton#m_group_msg_tbtn,
+MsgManagerWidget QToolButton#m_plugins_msg_tbtn,
+MsgManagerWidget QToolButton#m_sys_msg_tbtn,
+MsgManagerWidget QToolButton#m_mobile_msg_tbtn
+{
+    height:30px;
+    padding-left:8px;
+    background:transparent;
+    color:rgb(0,0,0);
+    border:0px solid rgba(221,221,221,255);
+    font-size:12px;
+    text-align:left;
+}
+
+MsgManagerWidget QToolButton#m_contact_msg_tbtn:hover,
+MsgManagerWidget QToolButton#m_group_msg_tbtn:hover,
+MsgManagerWidget QToolButton#m_plugins_msg_tbtn:hover,
+MsgManagerWidget QToolButton#m_sys_msg_tbtn:hover,
+MsgManagerWidget QToolButton#m_mobile_msg_tbtn:hover
+{
+    border:1px solid rgba(221,221,221,255);
+}
+
+MsgManagerWidget QToolButton#m_contact_msg_tbtn:checked,
+MsgManagerWidget QToolButton#m_group_msg_tbtn:checked,
+MsgManagerWidget QToolButton#m_plugins_msg_tbtn:checked,
+MsgManagerWidget QToolButton#m_sys_msg_tbtn:checked,
+MsgManagerWidget QToolButton#m_mobile_msg_tbtn:checked
+{
+    color:rgb(53,109,199);
+}
+/*消息管理器-MsgManagerWidget--end*/
+
+/*登录界面-LoginWidget--begin*/
+
+/*找回密码按钮*/
+LoginWidget QPushButton#m_retrieve_password_btn,QPushButton#m_register_account_btn
+{
+    background-color:transparent;
+    color:rgb(38,133,237);
+    font-size:9pt;
+    text-align:left;
+}
+
+LoginWidget QPushButton#m_submit_btn
+{
+    background-color:rgb(9,163,220);
+    border:0px solid rgba(221,221,221,255);
+    border-radius:5px;
+    color:rgb(255,255,255);
+    font-size:9pt;
+    text-align:center;
+}
+
+LoginWidget QPushButton#m_submit_btn:hover
+{
+    background-color:rgb(60,195,245);
+}
+
+LoginWidget QPushButton#m_submit_btn:pressed
+{
+    background-color:rgb(9,140,188);
+}
+
+LoginWidget QLineEdit#m_user_name_le
+{
+border-style: solid;
+border-top-width: 1px;
+border-right-width: 1px;
+border-bottom-width: 1px;
+border-left-width: 1px;
+border-color:rgba(209,209,209,255);
+border-top-left-radius:3px;
+border-top-right-radius:3px;
+border-bottom-right-radius:0;
+border-bottom-left-radius:0;
+color:rgb(0,0,0);
+font-size:9pt;
+text-align:left;
+}
+
+LoginWidget QLineEdit#m_user_name_le:hover
+{
+border:1px solid rgba(21,131,221,255);
+}
+
+LoginWidget QLineEdit#m_password_le
+{
+border-style: solid;
+border-top-width: 0px;/*去掉边框的上边宽度*/
+border-right-width: 1px;
+border-bottom-width: 1px;
+border-left-width: 1px;
+border-color:rgba(209,209,209,255);
+border-top-left-radius:0;
+border-top-right-radius:0;
+border-bottom-right-radius:3px;
+border-bottom-left-radius:3px;
+color:rgb(0,0,0);
+font-size:9pt;
+text-align:left;
+}
+
+LoginWidget QLineEdit#m_password_le:hover
+{
+border:1px solid rgba(21,131,221,255);
+}
+
+
+/*键盘按钮--begin*/
+QPushButton#m_keyboard_btn{
+    border-image: url(:/resources/default/login_pannel/keyboard_gray.png);
+}
+
+QPushButton#m_keyboard_btn:hover{
+    border-image: url(:/resources/default/login_pannel/keyboard.png);
+}
+
+QPushButton#m_keyboard_btn:pressed{
+    border-image: url(:/resources/default/login_pannel/keyboard_full_color.png);
+}
+
+/*键盘按钮--end*/
+
+
+/*登录界面-LoginWidget--end*/
+
+/*关于对话框-AboutDialog--begin*/
+AboutDialog QPushButton#m_ok_btn
+{
+    background-color:rgb(244,244,244);
+    border:1px solid rgba(156,158,162,255);
+    border-radius:1px;
+    color:rgb(0,0,0);
+    font-size:9pt;
+    text-align:center;
+}
+
+AboutDialog QPushButton#m_ok_btn:hover
+{
+    background-color:rgb(190,231,253);
+}
+
+AboutDialog QPushButton#m_ok_btn:pressed
+{
+background-color:rgb(244,244,244);
+border-color:rgba(79,173,216,255);
+}
+
+
+AboutDialog QTextBrowser#m_other_statements_tb
+{
+    border:0px solid rgba(156,158,162,255);
+    color:rgb(0,0,0);
+    font-size:9pt;
+}
+
+AboutDialog QPushButton#m_official_website_btn,
+AboutDialog QPushButton#m_user_agreement_btn
+{
+    color:rgb(0,154,218);
+    font-size:9pt;
+}
+
+AboutDialog QTextBrowser#m_other_statements_tb
+{
+    background-color:rgb(254,254,254);
+    font-size:10pt;
+    font-family:Times New Roman;
+}
+
+AboutDialog QWidget##m_center_widget
+{
+    font-size:11pt;
+    font-family:Times New Roman;
+}
+
+/*关于对话框-AboutDialog--end*/
+
+/*天气预报-WeatherInfoFloatingWidget--begin */
+
+/*天气预报-WeatherInfoFloatingWidget--end */

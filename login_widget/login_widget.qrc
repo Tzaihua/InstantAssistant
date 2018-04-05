@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+        <file>resources/message_box/sysmessagebox_errorFile.png</file>
+        <file>resources/message_box/sysmessagebox_inforFile.png</file>
+        <file>resources/message_box/sysmessagebox_okFile.png</file>
+        <file>resources/message_box/sysmessagebox_questionFile.png</file>
+        <file>resources/message_box/sysmessagebox_warningFile.png</file>
+    </qresource>
+</RCC>
